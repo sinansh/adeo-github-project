@@ -1,0 +1,15 @@
+<h1>All List</h1>
+<table class="table table-bordered">
+    <thead>
+        <th> Username </th>
+        <th> Count </th>
+    </thead>
+    <tbody>
+    <% @all_list.each do |object| %>
+        <tr>
+            <td> <%= object.username %> </td>
+            <td> <%= object.count %> </td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
